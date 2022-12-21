@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: kitsu-api
+  datasource:
+    url: jdbc:mysql://localhost:3306/kitsu?autoReconnect=true&useSSL=false
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+kitsu-api:
+  client:
+    service-url: https://kitsu.io
+    service-anime-endpoint: /api/edge/anime
+    service-anime-filter: /api/edge/episodes
+    service-manga-endpoint: /api/edge/manga
+    service-manga-filter: /api/edge/chapters
+    service-name: kitsu
